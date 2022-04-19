@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/logo.svg';
 import * as Types from './types'
 
+
 const user: Types.User = {
   name: 'ZIra',
   lastName: 'Marwan',

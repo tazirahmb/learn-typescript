@@ -12,12 +12,21 @@ export type WindowState =
   WindowsWidth | 'Locked' | 'Unlocked' | 'Unknown';
 
 export type Props = PropsWithChildren<{
+  /**
+   * @defaultValue 'React'
+   */
   title: string;
+  /**
+   * untuk menampilkan link di page
+   * @defaultValue false
+   */
   useLink?: boolean; // ? means optional
-   // kalau misal pake default value di propsnya,
-  // dia tetap akan error kalo misal default typenya ga sesuai
-  // solusinya dibikin defaultnya sama jenis (entah napa not work)
-  // atau propsnya dibikin opsional
+  /**
+   * kalau misal pake default value di propsnya,
+   * dia tetap akan error kalo misal default typenya ga sesuai
+   * solusinya dibikin defaultnya sama jenis (entah napa not work)
+   * atau propsnya dibikin opsional
+   */
   userData: User[]
 }>
 
